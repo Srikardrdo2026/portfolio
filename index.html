@@ -7,15 +7,30 @@
 </head>
 <body>
 
-  <!-- Header with Profile -->
+  <!-- Header with Hero Section -->
   <header>
     <div class="profile-container">
+      <img src="profile.jpg" alt="Srikar Sharma">
       <div>
         <h1>Srikar Sharma</h1>
-        <p>B.Tech CSE - Cyber Security | Backend Developer</p>
+        <p>B.Tech CSE - Cyber Security | Backend & AI Developer</p>
+        <div style="margin-top:15px;">
+          <a href="#projects" style="margin-right:10px;" class="cta-button">View Projects</a>
+          <a href="Srikar_Sharma_Resume.pdf" target="_blank" class="cta-button">Download Resume</a>
+        </div>
       </div>
     </div>
   </header>
+
+  <!-- Navigation -->
+  <nav>
+    <button onclick="location.href='#about'">About</button>
+    <button onclick="location.href='#skills'">Skills</button>
+    <button onclick="location.href='#projects'">Projects</button>
+    <button onclick="location.href='#coding'">Coding</button>
+    <button onclick="location.href='#education'">Education</button>
+    <button onclick="location.href='#contact'">Contact</button>
+  </nav>
 
   <!-- About -->
   <section id="about">
@@ -72,50 +87,81 @@
       🎯 Open to learning, innovating, and connecting with like-minded developers who share a passion for clean architecture, automation, and meaningful technology.
     </p>
   </section>
-  
 
-  <!-- Skills and Interests -->
-  <section>
+  <!-- Skills & Interests -->
+  <section id="skills">
     <h2>Skills</h2>
     <ul>
-      <li>Python, Java (Basics), C, SQL</li>
-      <li>Flask, RESTful APIs, JWT</li>
-      <li>MongoDB Atlas, Git & GitHub</li>
+      <li><strong>Languages:</strong> C, Java (Basics), Python, SQL, HTML, CSS</li>
+    <li><strong>Frameworks & Libraries:</strong> Flask, RESTful API, pyttsx3, SpeechRecognition</li>
+    <li><strong>Database:</strong> PostgreSQL, SQLite, MongoDB Atlas</li>
+    <li><strong>Version Control:</strong> Git, GitHub</li>
+    <li><strong>Tools:</strong> Postman</li>
+    <li><strong>System Knowledge:</strong> TCP/IP Networking, Basics of OS and Multithreading</li>
     </ul>
 
     <h2>Interests</h2>
     <ul>
       <li>Backend Development</li>
-      <li>AI Assistants and Automation</li>
-      <li>Cyber Security & Ethical Hacking</li>
+  <li>AI Assistants and Automation</li>
+  <li>Cyber Security & Ethical Hacking</li>
+  <li>Algorithm challenges on LeetCode/HackerRank</li>
+  <li>Gaming (strategy & problem-solving)</li>
+  <li>Music</li>
+  <li>Traveling</li>
     </ul>
   </section>
 
-  <!-- Projects -->
   <section id="projects">
     <h2>Projects</h2>
-
-    <h3>Expense Tracker Web Application</h3>
-    <p>This is a full-stack web application built using Python and Flask.
-        It helps users track their daily expenses and monitor monthly budgets in real-time.
-        The application features a secure login and registration system powered by JWT (JSON Web Tokens) for token-based authentication.
-        MongoDB Atlas is used as the cloud database for storing transaction data efficiently.
-        Users can categorize expenses, view summaries, and maintain financial discipline.
-        The backend uses RESTful APIs for smooth communication between frontend and server.
-        Data is stored in a structured NoSQL format, ideal for flexible and scalable design.
-        Built with clarity and simplicity, it can be extended with charts and user dashboards in the future.</p>
-    
-    <h3>JARVIS – Smart Desktop Assistant</h3>
-    <p>JARVIS is a modular voice-based desktop assistant built using Python, inspired by Iron Man's AI assistant.
-        It can recognize voice commands using the SpeechRecognition library and respond via pyttsx3 text-to-speech.
-        JARVIS can open apps, search the web, read the time, access AI responses using the OpenAI API, and more.
-        Designed for offline use and smart local command execution, it brings automation to the desktop.
-        It uses a modular architecture, making it easy to add or remove functionalities (like weather, jokes, etc).
-        The assistant combines user-friendly interactions with backend logic to perform real-world tasks.
-        Future updates can include GUI, dynamic command training, and cloud integration.
-        Ideal for learning how Python interacts with hardware, APIs, and speech technologies.</p>
-    
+  
+    <!-- Expense Tracker -->
+    <div class="project-card">
+      <h3>Expense Tracker Web Application</h3>
+      <p><strong>Role & Context:</strong> Full-stack developer for a personal finance management app. Designed backend APIs, user authentication, and MongoDB schema for transactions.</p>
+      <p><strong>Impact:</strong> Helps users track daily expenses, monitor budgets, and categorize spending for better financial discipline.</p>
+      <p><strong>Tech:</strong> Python, Flask, MongoDB, JWT, RESTful APIs</p>
+      <p><strong>Learnings:</strong> RESTful API design, secure authentication, database structuring, and full-stack integration.</p>
+    </div>
+  
+    <!-- JARVIS -->
+    <div class="project-card">
+      <h3>JARVIS – Smart Desktop Assistant <span class="badge">🚧 Ongoing</span></h3>
+      <p><strong>Role & Context:</strong> Designed modular AI-powered desktop assistant. Implemented voice recognition, command handling, and AI response integration.</p>
+      <p><strong>Impact:</strong> Automates desktop tasks, fetches AI responses, and improves productivity for day-to-day computing.</p>
+      <p><strong>Tech:</strong> Python, OpenAI API, SpeechRecognition, pyttsx3</p>
+      <p><strong>Learnings:</strong> Modular architecture, speech recognition integration, API handling, offline command execution.</p>
+    </div>
+  
+    <!-- Recipe Book -->
+    <div class="project-card">
+      <h3>Recipe Book (Frontend Only)</h3>
+      <p><strong>Role & Context:</strong> Frontend developer for a recipe management app. Designed clean UI with add/edit/view functionalities for recipes.</p>
+      <p><strong>Impact:</strong> Provides a user-friendly interface for organizing and browsing recipes. Structured for future backend integration.</p>
+      <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+      <p><strong>Learnings:</strong> Responsive design, UX/UI structuring, preparing frontend for future backend connectivity.</p>
+    </div>
+  
+    <!-- Manga Reader -->
+    <div class="project-card">
+      <h3>Manga Reader / Library <span class="badge">🚧 Ongoing</span></h3>
+      <p><strong>Role & Context:</strong> Frontend developer for a manga library app. Built browsing, searching, and favorite marking functionalities.</p>
+      <p><strong>Impact:</strong> Creates a smooth user experience for manga enthusiasts with organized collections and quick access.</p>
+      <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+      <p><strong>Learnings:</strong> Frontend UX design, state management, and planning for dynamic API integration.</p>
+    </div>
+  
+    <!-- PM Internship AI -->
+    <div class="project-card">
+      <h3>PM Internship AI Recommendation System <span class="badge">🚧 Ongoing</span></h3>
+      <p><strong>Role & Context:</strong> Developed lightweight AI recommendation engine for internship matching based on candidate profile and interests.</p>
+      <p><strong>Impact:</strong> Simplifies internship discovery for first-generation learners and candidates with low digital literacy.</p>
+      <p><strong>Tech:</strong> Rule-based / ML-light model, HTML/CSS Frontend</p>
+      <p><strong>Learnings:</strong> Personalization algorithms, UX for low-literacy users, mobile-friendly interface design.</p>
+    </div>
+  
   </section>
+  
 
   <!-- Coding Profiles -->
   <section id="coding">
@@ -149,27 +195,13 @@
     </ul>
   </section>
 
-  <!-- Achievements -->
-  <section id="achievements">
-    <h2>Achievements</h2>
-    <ul>
-      <li>Internal SMART INDIA HACKATHON 2024 participant – built a freelancing platform with real-time features</li>
-      <p>As a participant in the Internal SMART INDIA HACKATHON 2024, I contributed to building the frontend of a freelancing platform.
-        The platform allows clients to post jobs and freelancers to browse and apply for them through a clean, user-friendly interface.
-        Built using HTML, CSS, and JavaScript, the UI includes responsive design elements and smooth navigation between job listings and application forms.
-        The interface features real-time elements like job feed updates, notification prompts, and task status changes (simulated using mock data).
-        Special attention was given to user experience, with modern cards, modals, and section transitions enhancing interactivity.
-        While backend integration was not part of my scope, the frontend was structured to easily connect with APIs or databases later.
-        This project helped improve my frontend design and prototyping skills for scalable, client-focused platforms.</p>
-    </ul>
-  </section>
-
   <!-- Contact -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:saisrikarsharma2005@gmail.com">saisrikarsharma2005@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/srikarsharma1974" target="_blank">linkedin.com/in/srikarsharma1974</a></p>
-    <p>GitHub: <a href="https://github.com/Srikardrdo2026" target="_blank">github.com/Srikardrdo2026</a></p>
+    <p>Email: <a href="mailto:sharmasrikar2005@gmail.com">sharmasrikar2005@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/srikar-sharma-1b1b1b1b1/" target="_blank">srikar-sharma</a></p>
+    <p>GitHub: <a href="https://github.com/Srikar-098" target="_blank">Srikar-098</a></p>
   </section>
+
 </body>
 </html>
