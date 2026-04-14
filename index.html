@@ -3,222 +3,288 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Srikar Sharma - Portfolio</title>
+  <meta name="description" content="Srikar Sharma — B.Tech CSE (Cyber Security) student, Backend & AI Developer. Portfolio showcasing JARVIS AI Assistant, Expense Tracker, and more.">
+  <title>Srikar Sharma — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header with Hero Section -->
-  <header>
-    <div class="profile-container">
-      <img src="profile.jpg" alt="Srikar Sharma">
-      <div>
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">SS</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#featured">Featured</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO / INTRO ===== -->
+  <header id="hero">
+    <div class="hero-content">
+      <div class="hero-img-wrap">
+        <img src="profile.jpg" alt="Srikar Sharma" class="hero-img">
+      </div>
+      <div class="hero-text">
+        <p class="hero-greeting">Hi, I'm</p>
         <h1>Srikar Sharma</h1>
-        <p>B.Tech CSE - Cyber Security | Backend & AI Developer</p>
-        <div class="margin-top-15">
-          <a href="#projects" class="cta-button margin-right-10">View Projects</a>
-          <a href="Srikar_Sharma_Resume.pdf" target="_blank" class="cta-button">Download Resume</a>
+        <p class="hero-tagline">B.Tech CSE — Cyber Security &nbsp;|&nbsp; Backend &amp; AI Developer</p>
+        <p class="hero-summary">
+          I build smart, practical tools — from AI-powered desktop assistants to full-stack web apps.
+          Currently focused on Python, Flask, REST APIs, and integrating AI into real-world workflows.
+        </p>
+        <div class="hero-actions">
+          <a href="#featured" class="btn btn-primary">View Featured Project</a>
+          <a href="Srikar_Sharma_Resume.pdf" target="_blank" class="btn btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Resume
+          </a>
+          <a href="https://github.com/Srikardrdo2026" target="_blank" class="btn btn-ghost">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Navigation -->
-  <nav>
-    <button onclick="location.href='#about'">About</button>
-    <button onclick="location.href='#skills'">Skills</button>
-    <button onclick="location.href='#experience'">Experience</button>
-    <button onclick="location.href='#coding'">Coding</button>
-    <button onclick="location.href='#education'">Education</button>
-    <button onclick="location.href='#contact'">Contact</button>
-  </nav>
-
-  <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
-  
-    <p>
-      Hi, I'm Srikar Sharma — a Computer Science undergraduate with a deep curiosity for how technology can improve daily life. 
-      I thrive on building smart, practical tools that not only automate repetitive tasks but also solve real-world problems with simplicity and efficiency.
-    </p>
-  
-    <p>
-      I'm currently focused on hands-on projects like <strong>JARVIS</strong>, a modular AI-powered desktop assistant built in Python with OpenAI integration, 
-      capable of responding to natural language commands and managing desktop tasks. Another key project is a 
-      <strong>full-stack Expense Tracker App</strong>, designed to help users manage their daily budget with real-time updates and secure authentication — 
-      reflecting my passion for building user-centric applications.
-    </p>
-  
-    <p>
-      As a participant in the <strong>Internal SMART INDIA HACKATHON 2024</strong>, I collaborated with my team to design the frontend of a freelancing platform 
-      aimed at simplifying job postings and applications. My role focused on crafting a user-friendly interface with responsive design and real-time interaction elements. 
-      Though the backend was outside my scope, I ensured the UI was structured to seamlessly integrate with future APIs. This experience enhanced my ability to prototype 
-      functional tools under tight deadlines while aligning with real-world user needs.
-    </p>
-  
-    <p>🖥️ Here's what I bring to the table:</p>
-    <ul>
-      <li>Strong foundation in Python, Flask, and SQL</li>
-      <li>Hands-on experience building RESTful APIs and modular backend systems</li>
-      <li>Actively exploring Java and cloud technologies like AWS</li>
-      <li>Focused on building clean, scalable, and maintainable code</li>
-    </ul>
-  
-    <p>📘 Currently learning:</p>
-    <ul>
-      <li>Java Intermediate – OOPs concepts, annotations, and frameworks</li>
-      <li>Data Structures & Algorithms (DSA) revision on LeetCode</li>
-      <li>AWS Cloud Practitioner concepts for deployment and cloud services</li>
-    </ul>
-  
-    <p>🛠️ Current focus areas:</p>
-    <ul>
-      <li>Backend development with Flask, SQL, and Python</li>
-      <li>Integrating AI tools (e.g., OpenAI) into practical applications</li>
-      <li>Improving deployment & cloud skills with Git, GitHub, and AWS</li>
-    </ul>
-  
-    <p>
-      Outside of coding, I enjoy exploring new AI tools, reading about cybersecurity trends, and solving algorithmic problems 
-      on platforms like LeetCode and HackerRank. Whether it's a weekend project or a large-scale system, 
-      I'm always excited to learn, collaborate, and turn ideas into clean, working products.
-    </p>
-  
-    <p>
-      🎯 Open to learning, innovating, and connecting with like-minded developers who share a passion for clean architecture, automation, and meaningful technology.
-    </p>
+  <!-- ===== ABOUT (short) ===== -->
+  <section id="about" class="section">
+    <div class="section-inner">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a Computer Science undergraduate with a specialization in Cyber Security, passionate about building
+            tools that automate repetitive tasks and solve real-world problems with clean, modular code.
+          </p>
+          <p>
+            My focus areas include <strong>backend development</strong> (Python, Flask, REST APIs), <strong>AI integration</strong>
+            (OpenAI, speech recognition), and <strong>full-stack applications</strong> with secure authentication and database design.
+          </p>
+          <p>
+            As a participant in the <strong>Internal Smart India Hackathon 2024</strong>, I designed the frontend of a freelancing platform
+            under tight deadlines — sharpening my prototyping speed and collaborative skills.
+          </p>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <span class="highlight-icon">🎓</span>
+            <div>
+              <strong>GITAM University</strong>
+              <p>B.Tech CSE — Cyber Security</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-icon">💼</span>
+            <div>
+              <strong>VaultofCodes Intern</strong>
+              <p>Web Development (2024)</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-icon">📖</span>
+            <div>
+              <strong>Currently Learning</strong>
+              <p>Java, DSA, AWS Cloud</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Skills & Interests -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Languages:</strong> C, Java (Basics), Python, SQL, HTML, CSS</li>
-      <li><strong>Frameworks & Libraries:</strong> Flask, RESTful API, pyttsx3, SpeechRecognition</li>
-      <li><strong>Database:</strong> PostgreSQL, SQLite, MongoDB Atlas</li>
-      <li><strong>Version Control:</strong> Git, GitHub</li>
-      <li><strong>Tools:</strong> Postman</li>
-      <li><strong>System Knowledge:</strong> TCP/IP Networking, Basics of OS and Multithreading</li>
-    </ul>
-
-    <h2>Interests</h2>
-    <ul>
-      <li>Backend Development</li>
-      <li>AI Assistants and Automation</li>
-      <li>Cyber Security & Ethical Hacking</li>
-      <li>Algorithm challenges on LeetCode/HackerRank</li>
-      <li>Gaming (strategy & problem-solving)</li>
-      <li>Music</li>
-      <li>Traveling</li>
-    </ul>
+  <!-- ===== FEATURED PROJECT (Dynamic — rendered by JS) ===== -->
+  <section id="featured" class="section section-featured">
+    <div class="section-inner">
+      <!-- This content is dynamically rendered by script.js -->
+      <div id="featured-content"></div>
+    </div>
   </section>
 
-  <!-- Experience -->
-  <section id="experience">
-    <h2>Experience</h2>
+  <!-- ===== ALL PROJECTS GRID ===== -->
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <h2 class="section-title">All Projects</h2>
+      <div class="projects-grid" id="projects-grid">
+        <!-- Rendered by script.js -->
+      </div>
+    </div>
+  </section>
 
-    <div class="experience-card">
-      <h3>Web Development Intern — VaultofCodes</h3>
-      <p><em>August 2024 – September 2024</em></p>
-      <ul>
-        <li>Developed and maintained responsive web pages using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.</li>
-        <li>Collaborated with the development team to improve UI/UX consistency across multiple web projects.</li>
-        <li>Assisted in debugging front-end issues and optimizing website performance for better load times.</li>
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section">
+    <div class="section-inner">
+      <h2 class="section-title">Skills & Tech Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <div class="tech-pills">
+            <span class="pill">Python</span>
+            <span class="pill">C</span>
+            <span class="pill">Java</span>
+            <span class="pill">SQL</span>
+            <span class="pill">HTML/CSS</span>
+            <span class="pill">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Frameworks & Libraries</h3>
+          <div class="tech-pills">
+            <span class="pill">Flask</span>
+            <span class="pill">FastAPI</span>
+            <span class="pill">Scikit-learn</span>
+            <span class="pill">Dash/Plotly</span>
+            <span class="pill">SpeechRecognition</span>
+            <span class="pill">pyttsx3</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Databases</h3>
+          <div class="tech-pills">
+            <span class="pill">PostgreSQL</span>
+            <span class="pill">MongoDB Atlas</span>
+            <span class="pill">SQLite</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Tools & Platforms</h3>
+          <div class="tech-pills">
+            <span class="pill">Git & GitHub</span>
+            <span class="pill">Docker</span>
+            <span class="pill">Postman</span>
+            <span class="pill">n8n</span>
+            <span class="pill">VS Code</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Concepts</h3>
+          <div class="tech-pills">
+            <span class="pill">REST API Design</span>
+            <span class="pill">JWT Auth</span>
+            <span class="pill">TCP/IP</span>
+            <span class="pill">ML Classification</span>
+            <span class="pill">Modular Architecture</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section">
+    <div class="section-inner">
+      <h2 class="section-title">Experience</h2>
+      <div class="experience-card">
+        <div class="exp-header">
+          <h3>Web Development Intern</h3>
+          <span class="exp-company">VaultofCodes</span>
+        </div>
+        <p class="exp-date">August 2024 — September 2024</p>
+        <ul>
+          <li>Developed and maintained responsive web pages using HTML, CSS, and JavaScript.</li>
+          <li>Collaborated with the development team to improve UI/UX consistency across projects.</li>
+          <li>Debugged front-end issues and optimized website performance for better load times.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION & CERTIFICATIONS ===== -->
+  <section id="education" class="section">
+    <div class="section-inner">
+      <h2 class="section-title">Education</h2>
+      <div class="education-grid">
+        <div class="edu-card">
+          <span class="edu-year">2022 — Present</span>
+          <h3>GITAM University, Bengaluru</h3>
+          <p>B.Tech in CSE (Cyber Security)</p>
+        </div>
+        <div class="edu-card">
+          <span class="edu-year">2020 — 2022</span>
+          <h3>Sri Chaithanya College, Anantapur</h3>
+          <p>Intermediate (MPC)</p>
+        </div>
+        <div class="edu-card">
+          <span class="edu-year">2019 — 2020</span>
+          <h3>Sri Chaitanya School, Anantapur</h3>
+          <p>SSC</p>
+        </div>
+      </div>
+
+      <h2 class="section-title" style="margin-top: 48px;">Certifications</h2>
+      <ul class="cert-list">
+        <li>AWS Cloud Practitioner (Training Completed — Cert. Planned Aug 2025)</li>
+        <li>Java Developer Certification</li>
+        <li>Programming with Python</li>
+        <li>Network Communication — TCP/IP and Advanced Topics</li>
       </ul>
     </div>
-
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-  
-    <!-- Expense Tracker -->
-    <div class="project-card">
-      <h3>Expense Tracker Web Application</h3>
-      <p><strong>Role & Context:</strong> Full-stack developer for a personal finance management app. Designed backend APIs, user authentication, and MongoDB schema for transactions.</p>
-      <p><strong>Impact:</strong> Helps users track daily expenses, monitor budgets, and categorize spending for better financial discipline.</p>
-      <p><strong>Tech:</strong> Python, Flask, MongoDB, JWT, RESTful APIs</p>
-      <p><strong>Learnings:</strong> RESTful API design, secure authentication, database structuring, and full-stack integration.</p>
+  <!-- ===== CODING PROFILES ===== -->
+  <section id="coding" class="section">
+    <div class="section-inner">
+      <h2 class="section-title">Coding Profiles</h2>
+      <div class="coding-grid">
+        <a href="https://leetcode.com/u/Srikar-098" target="_blank" rel="noopener" class="coding-link">
+          <strong>LeetCode</strong>
+          <span>Srikar-098</span>
+        </a>
+        <a href="https://www.hackerrank.com/profile/sharmasrikar2005" target="_blank" rel="noopener" class="coding-link">
+          <strong>HackerRank</strong>
+          <span>sharmasrikar2005</span>
+        </a>
+        <a href="https://www.geeksforgeeks.org/user/sharmasrilhim/" target="_blank" rel="noopener" class="coding-link">
+          <strong>GeeksForGeeks</strong>
+          <span>sharmasrilhim</span>
+        </a>
+        <a href="https://takeuforward.org/profile/Srikardrdo" target="_blank" rel="noopener" class="coding-link">
+          <strong>TakeUForward</strong>
+          <span>Srikardrdo</span>
+        </a>
+      </div>
     </div>
-  
-    <!-- JARVIS -->
-    <div class="project-card">
-      <h3>JARVIS – Smart Desktop Assistant <span class="badge">🚧 Ongoing</span></h3>
-      <p><strong>Role & Context:</strong> Designed modular AI-powered desktop assistant. Implemented voice recognition, command handling, and AI response integration.</p>
-      <p><strong>Impact:</strong> Automates desktop tasks, fetches AI responses, and improves productivity for day-to-day computing.</p>
-      <p><strong>Tech:</strong> Python, OpenAI API, SpeechRecognition, pyttsx3</p>
-      <p><strong>Learnings:</strong> Modular architecture, speech recognition integration, API handling, offline command execution.</p>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section section-contact">
+    <div class="section-inner">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-desc">Open to opportunities, collaborations, and conversations about tech.</p>
+      <div class="contact-links">
+        <a href="mailto:sharmasrikar2005@gmail.com" class="contact-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          sharmasrikar2005@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/srikar-sharma-1b1b1b1b1/" target="_blank" rel="noopener" class="contact-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/Srikar-098" target="_blank" rel="noopener" class="contact-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
     </div>
-  
-    <!-- Recipe Book -->
-    <div class="project-card">
-      <h3>Recipe Book (Frontend Only)</h3>
-      <p><strong>Role & Context:</strong> Frontend developer for a recipe management app. Designed clean UI with add/edit/view functionalities for recipes.</p>
-      <p><strong>Impact:</strong> Provides a user-friendly interface for organizing and browsing recipes. Structured for future backend integration.</p>
-      <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-      <p><strong>Learnings:</strong> Responsive design, UX/UI structuring, preparing frontend for future backend connectivity.</p>
-    </div>
-  
-    <!-- Manga Reader -->
-    <div class="project-card">
-      <h3>Manga Reader / Library <span class="badge">🚧 Ongoing</span></h3>
-      <p><strong>Role & Context:</strong> Frontend developer for a manga library app. Built browsing, searching, and favorite marking functionalities.</p>
-      <p><strong>Impact:</strong> Creates a smooth user experience for manga enthusiasts with organized collections and quick access.</p>
-      <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-      <p><strong>Learnings:</strong> Frontend UX design, state management, and planning for dynamic API integration.</p>
-    </div>
-  
-    <!-- PM Internship AI -->
-    <div class="project-card">
-      <h3>PM Internship AI Recommendation System <span class="badge">🚧 Ongoing</span></h3>
-      <p><strong>Role & Context:</strong> Developed lightweight AI recommendation engine for internship matching based on candidate profile and interests.</p>
-      <p><strong>Impact:</strong> Simplifies internship discovery for first-generation learners and candidates with low digital literacy.</p>
-      <p><strong>Tech:</strong> Rule-based / ML-light model, HTML/CSS Frontend</p>
-      <p><strong>Learnings:</strong> Personalization algorithms, UX for low-literacy users, mobile-friendly interface design.</p>
-    </div>
-  
-  </section>
-  
-
-  <!-- Coding Profiles -->
-  <section id="coding">
-    <h2>Coding Progress</h2>
-    <ul>
-      <li>LeetCode: <a href="https://leetcode.com/u/Srikar-098" target="_blank" rel="noopener">Srikar-098</a></li>
-      <li>HackerRank: <a href="https://www.hackerrank.com/profile/sharmasrikar2005" target="_blank" rel="noopener">sharmasrikar2005</a></li>
-      <li>GeeksForGeeks: <a href="https://www.geeksforgeeks.org/user/sharmasrilhim/" target="_blank" rel="noopener">sharmasrilhim</a></li>
-      <li>TakeUForward: <a href="https://takeuforward.org/profile/Srikardrdo" target="_blank" rel="noopener">Srikardrdo</a></li>
-    </ul>
   </section>
 
-  <!-- Education -->
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>GITAM University (2022 - Present)</strong> – B.Tech in CSE (Cyber Security), Bengaluru</li>
-      <li><strong>Sri Chaithanya College (2020 - 2022)</strong> – Intermediate (MPC), Anantapur</li>
-      <li><strong>Sri Chaitanya School (2019 - 2020)</strong> – SSC, Anantapur</li>
-    </ul>
-  </section>
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>Built by Srikar Sharma · 2025</p>
+  </footer>
 
-  <!-- Certifications -->
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <ul>
-      <li>AWS Cloud Practitioner (Training Completed – Cert. Planned Aug 2025)</li>
-      <li>Java Developer Certification</li>
-      <li>Programming with Python</li>
-      <li>Network Communication – TCP/IP and Advanced Topics</li>
-    </ul>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:sharmasrikar2005@gmail.com">sharmasrikar2005@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/srikar-sharma-1b1b1b1b1/" target="_blank" rel="noopener">srikar-sharma</a></p>
-    <p>GitHub: <a href="https://github.com/Srikar-098" target="_blank" rel="noopener">Srikar-098</a></p>
-  </section>
-
+  <script src="script.js"></script>
 </body>
 </html>
